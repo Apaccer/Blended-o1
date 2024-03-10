@@ -8,7 +8,7 @@ import {
   ForbesList,
 } from 'components';
 import arcticle from './data/article.json';
-
+import stats from './data/stats.json';
 export const App = () => {
   return (
     <Section>
@@ -25,7 +25,9 @@ export const App = () => {
         />
 
         <Heading title="Task 2 Statistics" top bottom />
-        <Statistics title="Main Statistics" />
+        <Statistics title="Main Statistics"
+          stats={stats}
+        />
 
         <Heading title="Task 3 Forbes list" top bottom />
         <ForbesList />
